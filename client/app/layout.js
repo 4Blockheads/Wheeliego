@@ -15,10 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

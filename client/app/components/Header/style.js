@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const $Header = styled.header`
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,23 +9,31 @@ const $Header = styled.header`
   font-size: 2vw;
   height: 10%;
   z-index: 2;
+  padding: 30px;
+
   h1 {
-    margin-left: 3%;
     color: black;
   }
   nav {
     display: flex;
     font-size: 1.5vw;
   }
-  ul{
-    margin-right: 10px;
+  ul {
+    display: block;
+    margin-right: 30px;
+    padding-top: 3.3px;
   }
   button {
-    width: 15vw;
-    border: 1px solid black;
+    width: 13vw;
+    border: 2px solid black;
     border-radius: 20px;
     font-size: 1.5vw;
-    margin-right: 3%;
+    text-align: center;
+  }
+  .image-box {
+    width: 150px;
+    height: 50px;
+    position: relative;
   }
 `;
 
