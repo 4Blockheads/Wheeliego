@@ -4,8 +4,15 @@
  **/
 import React from 'react';
 
+import PostListBox from '../components/PostListBox/PostListBox';
+import styles from './page.module.css';
+
 const page = () => {
-  return <div>post</div>;
+  return (
+    <section className={styles.section}>
+      <PostListBox />
+    </section>
+  );
 };
 
 export default page;

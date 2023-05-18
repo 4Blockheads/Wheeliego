@@ -1,0 +1,7 @@
+.section {
+  display: block;
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 100%;
+  background-color: rgb(105, 145, 180);
+}
