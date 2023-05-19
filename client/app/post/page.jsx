@@ -4,7 +4,7 @@
  **/
 import React from 'react';
 
-import PostListBox from '../components/PostListBox/PostListBox';
+import PostListBox from '../components/PostListBox/RecentPostListBox';
 import styles from './page.module.css';
 
 const page = () => {

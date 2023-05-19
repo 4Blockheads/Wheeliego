@@ -5,6 +5,8 @@ const $PostListBox = styled.div`
   background-color: blanchedalmond;
   border-radius: 15px;
 transition: all 1s;
+margin: 10px 0px;
+
     .wrapper{
         display: flex;
         align-items:center
