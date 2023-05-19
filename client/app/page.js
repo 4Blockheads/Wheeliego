@@ -1,12 +1,14 @@
 /**
- * @author    : gogleset
+ * @author    : gogleset, Jaenk-99
  * @description : 홈 페이지 부분
  **/
 
 import React from 'react';
 
+import Home from './components/Home/Home';
+
 const page = () => {
-  return <div>홈페이지입니다.</div>;
+  return <Home />;
 };
 
 export default page;
