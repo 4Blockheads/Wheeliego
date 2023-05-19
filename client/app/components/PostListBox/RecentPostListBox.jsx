@@ -4,9 +4,9 @@
  **/
 "use client";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
-import { data } from "../../../dummi.json";
+import React, { useState } from "react";
 
+import { data } from "../../../dummi.json";
 import $PostListBox from "./style";
 
 const PostListBox = () => {
@@ -14,11 +14,6 @@ const PostListBox = () => {
   // 좋아요를 눌렀나 안눌렀나 감지
   // 시그널 수 눌렀나 안눌렀나 감지
   const [isClickSignals, setIsClickSignals] = useState(false);
-
-  // 하트버튼 눌렀을때
-  const handleCountedHeartsNum = (event) => {
-    console.log("read");
-  };
   // 댓글 버튼 눌렀을 때
   const handleClickSignals = (event) => {
     // console.log("click");
@@ -51,7 +46,7 @@ const PostListBox = () => {
                   {/* <Image src="/toki1.png" fill /> */}
                 </div>
                 <div className="contents-box">
-                  <h1>Hot Signal</h1>
+                  <h1>Recent Signal</h1>
                   <p className="contents">{value.content}</p>
                   <div className="info">
                     <p>{value.date}</p>
