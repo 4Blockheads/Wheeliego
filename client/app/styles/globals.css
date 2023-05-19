@@ -19,13 +19,14 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   font-family: "NeoDunggeunmoPro-Regular";
-  background-image: url("../../public/background-img2.png");
+  background-image: url(/_next/static/media/background-img2.b85b58d4.png);
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   box-sizing: border-box;
+  background-size: cover;
 }
 
 /* @media (prefers-color-scheme: dark) {
