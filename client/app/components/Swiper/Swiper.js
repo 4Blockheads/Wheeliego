@@ -9,7 +9,7 @@ import 'swiper/css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-export default () => {
+export default swiper = () => {
   return (
     <Swiper
       spaceBetween={50}

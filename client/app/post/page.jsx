@@ -2,10 +2,10 @@
  * @author    : gogleset
  * @description : post page 부분입니다.
  **/
-import React from "react";
+import React from 'react';
 
-import PostListBox from "../components/PostListBox/RecentPostListBox";
-import styles from "./page.module.css";
+import PostListBox from '../components/PostListBox/RecentPostListBox';
+import styles from './page.module.css';
 
 const page = () => {
   return (

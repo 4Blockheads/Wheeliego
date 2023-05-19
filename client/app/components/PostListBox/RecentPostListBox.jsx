@@ -2,12 +2,12 @@
  * @author    : gogleset
  * @description : post page에서 시그널을 출력하는 box 부분입니다.
  **/
-"use client";
-import Image from "next/image";
-import React, { useState } from "react";
+'use client';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
-import { data } from "../../../dummi.json";
-import $PostListBox from "./style";
+import { data } from '../../../dummi.json';
+import $PostListBox from './style';
 
 const PostListBox = () => {
   // 좋아요 수
@@ -26,15 +26,15 @@ const PostListBox = () => {
       event.target.parentElement.parentElement.parentElement.parentElement
         .parentElement;
     if (isClickSignals) {
-      $postListBox.style.height = "400px";
+      $postListBox.style.height = '400px';
     } else {
-      $postListBox.style.height = "120px";
+      $postListBox.style.height = '120px';
     }
 
     // console.log("isClickSignals:::  " + isClickSignals);
   };
   return (
-    <div style={{ height: "600px", overflow: "scroll" }}>
+    <div style={{ height: '600px', overflow: 'scroll' }}>
       {data &&
         data.map((value, index) => {
           // console.log(value);
@@ -55,7 +55,7 @@ const PostListBox = () => {
                       <Image
                         // false면 빈 하트, 아니면 채운 하트
                         src={
-                          hearted ? "/heart-solid.svg" : "/heart-regular.svg"
+                          hearted ? '/heart-solid.svg' : '/heart-regular.svg'
                         }
                         width={20}
                         height={20}
@@ -64,13 +64,13 @@ const PostListBox = () => {
                           if (hearted) {
                             event.currentTarget.nextElementSibling.innerHTML--;
                             hearted = false;
-                            event.currentTarget.src = "/heart-regular.svg";
-                            console.log("hearted");
+                            event.currentTarget.src = '/heart-regular.svg';
+                            console.log('hearted');
                           } else {
                             event.currentTarget.nextElementSibling.innerHTML++;
                             hearted = true;
-                            event.currentTarget.src = "/heart-solid.svg";
-                            console.log("not hearted");
+                            event.currentTarget.src = '/heart-solid.svg';
+                            console.log('not hearted');
                           }
                         }}
                       />
