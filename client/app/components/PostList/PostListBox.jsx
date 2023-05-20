@@ -2,12 +2,12 @@
  * @author    : gogleset
  * @description : post page에서 시그널을 출력하는 box 부분입니다.
  **/
-"use client";
-import Image from "next/image";
-import React, { useState } from "react";
+'use client';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
-import Comment from "../Comment/Comment";
-import $PostListBox from "./style";
+import Comment from '../Comment/Comment';
+import $PostListBox from './style';
 
 const PostListBox = (props) => {
   console.log(props);
@@ -42,7 +42,7 @@ const PostListBox = (props) => {
           <Image src={imageURl} fill />
         </div>
         <div className="contents-box">
-          <h1>{`${props.type == "Recent" ? "Recent" : "Hot"} Signal`}</h1>
+          <h1>{`${props.type == 'Recent' ? 'Recent' : 'Hot'} Signal`}</h1>
           <p className="contents">{props.value.content}</p>
           <div className="info">
             <p>{props.value.date}</p>
@@ -72,9 +72,9 @@ const PostListBox = (props) => {
               {/* signals */}
               <Image
                 src={
-                  props.type === "Recent"
-                    ? "/signal-white.png"
-                    : "/signal-black.png"
+                  props.type === 'Recent'
+                    ? '/signal-white.png'
+                    : '/signal-black.png'
                 }
                 width={20}
                 height={20}
@@ -92,9 +92,9 @@ const PostListBox = (props) => {
                     event.target.parentElement.parentElement.parentElement
                       .parentElement.parentElement;
                   if (!signal) {
-                    $postListBox.style.height = "500px";
+                    $postListBox.style.height = '500px';
                   } else {
-                    $postListBox.style.height = "120px";
+                    $postListBox.style.height = '120px';
                   }
                 }}
               />
