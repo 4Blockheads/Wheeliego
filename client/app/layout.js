@@ -1,7 +1,7 @@
 import "./styles/globals.css";
 
 /**
- * @author    : gogleset
+ * @author    : gogleset, Jaenk
  * @description : Homepage 레이아웃
  **/
 import Header from "./components/Header/Header";
@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body suppressHydrationWarning={true}>
         <Providers>
+          <div id="modal-root" />
           <Header />
           {children}
           {/* <Footer /> */}
