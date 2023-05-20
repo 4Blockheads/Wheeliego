@@ -7,6 +7,13 @@
   /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #292929;
+  --bg-color: #fff;
+  --toki-color-green: #58a25d;
+  --main-color: #323232;
+  --toki-color-violet: rgb(130, 50, 138);
 }
 
 @font-face {
@@ -18,9 +25,19 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: "NeoDunggeunmoPro-Regular";
+  background-image: url("../../public/background-img2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  background-size: cover;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* @media (prefers-color-scheme: dark) {
