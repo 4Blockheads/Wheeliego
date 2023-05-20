@@ -60,7 +60,7 @@ export function ConnectWallet() {
 
   const postLogin = async () => {
     try {
-      const response = await axios.post('http://3.34.138.199:8080/api/login', {
+      const response = await axios.post('https://3.34.138.199:443/api/login', {
         userWallet: address,
       });
       const data = response.data;

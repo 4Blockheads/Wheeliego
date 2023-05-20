@@ -19,7 +19,7 @@ function Page() {
       console.log(inputRef.current.value);
       try {
         const response = await axios.post(
-          'http://3.34.138.199:8080/api/signup',
+          'https://3.34.138.199:443/api/signup',
           {
             userWallet: address,
             userNickname: inputRef.current.value,
@@ -27,7 +27,7 @@ function Page() {
         );
         if (response.status === 201) {
           const responseLogin = await axios.post(
-            'http://3.34.138.199:8080/api/login',
+            'https://3.34.138.199:443/api/login',
             {
               userWallet: address,
             }
