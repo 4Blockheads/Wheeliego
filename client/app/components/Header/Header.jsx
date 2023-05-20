@@ -2,28 +2,28 @@
  * @author    : gogleset, Jaenk
  * @description : Header 부분 Navigation bar
  **/
-"use client";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import React from "react";
-import { useNetwork } from "wagmi";
+'use client';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import React from 'react';
+import { useNetwork } from 'wagmi';
 
-import { ConnectWallet } from "./ConnectWallet";
-import { $ButtonsDiv, $Header, $ImageDiv, $Nav, $SearchButton } from "./style";
+import { ConnectWallet } from './ConnectWallet';
+import { $ButtonsDiv, $Header, $ImageDiv, $Nav, $SearchButton } from './style';
 
 const Header = () => {
   const router = useRouter();
   const { chain } = useNetwork();
-  console.log("chain", chain);
+  console.log('chain', chain);
 
   const handleClick = () => {
-    return router.push("/");
+    return router.push('/');
   };
   return (
     <$Header>
       <$ImageDiv>
         <Image
-          style={{ cursor: "pointer" }}
+          style={{ cursor: 'pointer' }}
           priority={true}
           width="250"
           height="125"
@@ -36,7 +36,7 @@ const Header = () => {
         <span>Home</span>
         <span
           onClick={() => {
-            return router.push("/post");
+            return router.push('/post');
           }}
         >
           Post

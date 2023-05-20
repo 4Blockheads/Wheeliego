@@ -2,10 +2,10 @@
  * @author    : gogleset
  * @description : signal 보내는 버튼 부분입니다.
  **/
-"use client";
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
 
-import SendSignal from "../SendSignal/SendSignal";
+import SendSignal from '../SendSignal/SendSignal';
 
 const SendSignalButton = () => {
   const [isClickSendSignalButton, setClickSendSignalButton] = useState(false);

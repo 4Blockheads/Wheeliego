@@ -1,17 +1,17 @@
-import "./styles/globals.css";
+import './styles/globals.css';
 
 /**
  * @author    : gogleset, Jaenk
  * @description : Homepage 레이아웃
  **/
-import Header from "./components/Header/Header";
-import { Providers } from "./providers";
+import Header from './components/Header/Header';
+import { Providers } from './providers';
 
 export const metadata = {
-  title: "uniToki",
-  description: "searching our friends",
+  title: 'uniToki',
+  description: 'searching our friends',
   icons: {
-    icon: "/favicon.ico",
+    icon: '/favicon.ico',
   },
 };
 

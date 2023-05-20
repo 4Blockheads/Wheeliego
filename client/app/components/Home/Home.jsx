@@ -2,9 +2,9 @@
  * @author    : Jaenk-99
  * @description : HomePage 작업
  **/
-"use client";
-import Image from "next/image";
-import React from "react";
+'use client';
+import Image from 'next/image';
+import React from 'react';
 
 import {
   $Button,
@@ -14,8 +14,8 @@ import {
   $ImageRight,
   $ImagesDiv,
   $TextsDiv,
-  $WhiteButton,
-} from "./style";
+  $WhiteButton
+} from './style';
 
 const Home = () => {
   return (

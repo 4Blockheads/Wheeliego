@@ -1,8 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const $HomeWrap = styled.div`
   width: 100vw;
-  height: 100%;
   z-index: 1;
   display: flex;
   padding: 0 4vw;
@@ -12,7 +11,7 @@ export const $ImagesDiv = styled.div`
   width: 60%;
   height: 65vh;
   display: flex;
-  margin-left: 12vw;
+  margin-left: 6vw;
   margin-top: 7vh;
 `;
 

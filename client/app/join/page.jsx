@@ -2,8 +2,8 @@
 import axios from 'axios';
 import { useRef } from 'react';
 import { useAccount } from 'wagmi';
-function page() {
-  const { connector, isConnected, address } = useAccount();
+function Page() {
+  const { isConnected, address } = useAccount();
   const inputRef = useRef();
 
   const onClickBtn = async () => {
@@ -18,7 +18,7 @@ function page() {
           }
         );
         console.log(response.status);
-        const data = response.data;
+        // const data = response.data;
       } catch (error) {
         console.log(error.response.status);
       }
@@ -35,4 +35,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
