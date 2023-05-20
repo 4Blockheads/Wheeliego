@@ -1,14 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const $PostListBox = styled.div`
   height: 120px;
   background-color: ${(props) => {
-    if (props.type === 'Recent') {
-      return 'black';
-    } else if (props.type === 'Hot' && props.index === 0) {
-      return 'rgb(190, 97, 139)';
-    } else if (props.type === 'Hot' && props.index === 1) {
-      return 'rgb(237, 147, 145)';
+    if (props.type === "Recent") {
+      return "black";
+    } else if (props.type === "Hot" && props.index === 0) {
+      return "rgb(190, 97, 139)";
+    } else if (props.type === "Hot" && props.index === 1) {
+      return "rgb(237, 147, 145)";
     }
   }};
   border-radius: 15px;
@@ -19,19 +19,19 @@ const $PostListBox = styled.div`
     display: flex;
     align-items: center;
     color: ${(props) => {
-    if (props.type === 'Recent') {
-      return 'white';
-    } else {
-      return 'black';
-    }
-  }};
+      if (props.type === "Recent") {
+        return "white";
+      } else {
+        return "black";
+      }
+    }};
   }
   .image-box {
     width: 100px;
     height: 100px;
-    background-color: darkcyan;
     border-radius: 15px;
     margin: 0px 10px;
+    position: relative;
   }
   .contents-box {
     display: block;
@@ -65,8 +65,8 @@ const $PostListBox = styled.div`
     display: flex;
     justify-content: space-between;
     color: ${(props) => {
-    return 'white';
-  }};
+      return "white";
+    }};
   }
   .info > div {
     display: flex;
