@@ -1,6 +1,6 @@
 import './styles/globals.css';
 
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 /**
  * @author    : gogleset
  * @description : Homepage 레이아웃
@@ -16,9 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body suppressHydrationWarning={true}>
+        <div id="modal-root" />
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

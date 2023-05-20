@@ -3,5 +3,11 @@
   margin: 0 auto;
   max-width: 1280px;
   height: 100%;
-  background-color: rgb(105, 145, 180);
+  /* background-color: rgb(105, 145, 180); */
+  padding-top: 10px;
+}
+.write_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
