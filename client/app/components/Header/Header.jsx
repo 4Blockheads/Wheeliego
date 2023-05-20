@@ -1,41 +1,56 @@
 /**
- * @author    : gogleset
+ * @author    : gogleset, Jaenk
  * @description : Header 부분 Navigation bar
  **/
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React from 'react';
+"use client";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import React from "react";
+import { useNetwork } from "wagmi";
 
-import $Header from './style';
+import { ConnectWallet } from "./ConnectWallet";
+import { $ButtonsDiv, $Header, $ImageDiv, $Nav, $SearchButton } from "./style";
 
 const Header = () => {
   const router = useRouter();
+  const { chain } = useNetwork();
+  console.log("chain", chain);
 
   const handleClick = () => {
-    return router.push('/');
+    return router.push("/");
   };
   return (
     <$Header>
-      <div className="image-box">
+      <$ImageDiv>
         <Image
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: "pointer" }}
           priority={true}
-          fill={true}
+          width="250"
+          height="125"
           onClick={handleClick}
           src="/logo.png"
           alt="logo"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </div>
-
-      <nav>
-        <ul>
-          <Link href="/post">Post</Link>
-        </ul>
-        <button className="button">connected wallet</button>
-      </nav>
+      </$ImageDiv>
+      <$Nav>
+        <span>Home</span>
+        <span
+          onClick={() => {
+            return router.push("/post");
+          }}
+        >
+          Post
+        </span>
+        <span>My page</span>
+        <span>Point</span>
+      </$Nav>
+      <$ButtonsDiv>
+        <$SearchButton>
+          <Image className="image" src="/search.png" width="20" height="20" />
+          Search
+        </$SearchButton>
+        <ConnectWallet />
+      </$ButtonsDiv>
     </$Header>
   );
 };

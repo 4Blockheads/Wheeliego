@@ -2,24 +2,55 @@
  * @author    : Jaenk-99
  * @description : HomePage 작업
  **/
-'use client';
-import Image from 'next/image';
-import React from 'react';
+"use client";
+import Image from "next/image";
+import React from "react";
 
-import { $Button, $HomeWrap, $ImagesDiv, $TextsDiv } from './style';
+import {
+  $Button,
+  $ButtonDiv,
+  $HomeWrap,
+  $ImageLeft,
+  $ImageRight,
+  $ImagesDiv,
+  $TextsDiv,
+  $WhiteButton,
+} from "./style";
 
 const Home = () => {
   return (
     <$HomeWrap>
       <$ImagesDiv>
-        <Image priority={true} fill={true} src="/toki1.png" alt="toki1" />
-        <Image priority={true} fill={true} src="/toki2.png" alt="toki2" />
+        <$ImageLeft>
+          <Image
+            priority={true}
+            src="/tokiLeft.png"
+            alt="tokiLeft"
+            width="400"
+            height="500"
+          />
+        </$ImageLeft>
+        <$ImageRight>
+          <Image
+            priority={true}
+            src="/tokiRight.png"
+            alt="tokiRight"
+            width="350"
+            height="50"
+          />
+        </$ImageRight>
       </$ImagesDiv>
       <$TextsDiv>
-        Lorem ipsum dolor sit amet, consectetuer adipisc- ing elit, sed diam
-        nonummy nibh euismod tinci- dunt ut laoreet dolore magna aliquam erat
-        volut- pat. Ut wisi enim ad minim veniam, quis nostrud
-        <$Button>POST NOW</$Button>
+        Welcome to Unitoki, the intergalactic hub of social networking in the
+        web3.0 universe! 🚀✨ Are you tired of the same old web2.0 social
+        networks that feel like they're stuck in the Stone Age? Well, prepare to
+        embark on an extraterrestrial journey into the world of Unitoki, where
+        we've combined the fun and excitement of social networking with the
+        limitless possibilities of the web3.0 era!a
+        <$ButtonDiv>
+          <$Button>POST NOW</$Button>
+          <$WhiteButton>Find Signal</$WhiteButton>
+        </$ButtonDiv>
       </$TextsDiv>
     </$HomeWrap>
   );

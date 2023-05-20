@@ -1,24 +1,29 @@
-import './styles/globals.css';
+import "./styles/globals.css";
 
-import Footer from './components/Footer/Footer';
 /**
  * @author    : gogleset
  * @description : Homepage 레이아웃
  **/
-import Header from './components/Header/Header';
+import Header from "./components/Header/Header";
+import { Providers } from "./providers";
 
 export const metadata = {
-  title: 'uniToki',
-  description: 'searching our friends',
+  title: "uniToki",
+  description: "searching our friends",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body suppressHydrationWarning={true}>
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          {/* <Footer /> */}
+        </Providers>
       </body>
     </html>
   );
