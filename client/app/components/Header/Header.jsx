@@ -33,7 +33,13 @@ const Header = () => {
         />
       </$ImageDiv>
       <$Nav>
-        <span>Home</span>
+        <span
+          onClick={() => {
+            return router.push('/');
+          }}
+        >
+          Home
+        </span>
         <span
           onClick={() => {
             return router.push('/post');

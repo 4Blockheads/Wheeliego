@@ -29,9 +29,9 @@ const $PostListBox = styled.div`
   .image-box {
     width: 100px;
     height: 100px;
-    background-color: darkcyan;
     border-radius: 15px;
     margin: 0px 10px;
+    position: relative;
   }
   .contents-box {
     display: block;

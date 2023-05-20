@@ -33,10 +33,14 @@ const PostListBox = (props) => {
     }
   }
 
+  const imageURl = `/alien${Math.floor(Math.random() * 5) + 1}.png`;
+
   return (
     <$PostListBox key={props.index} type={props.type} index={props.index}>
       <div className="wrapper">
-        <div className="image-box">{/* <Image src="/toki1.png" fill /> */}</div>
+        <div className="image-box">
+          <Image src={imageURl} fill />
+        </div>
         <div className="contents-box">
           <h1>{`${props.type == 'Recent' ? 'Recent' : 'Hot'} Signal`}</h1>
           <p className="contents">{props.value.content}</p>
