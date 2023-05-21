@@ -16,7 +16,7 @@ const $comment = styled.div`
   }};
     border-bottom: 2px solid ${(props) => {
     if (props.type === 'Hot') {
-      return 'black'; 
+      return 'black';
     } else {
       return 'white';
     }
@@ -60,6 +60,10 @@ const $comment = styled.div`
     background-color:aquamarine;
     border-radius: 10px;
   }
+  /* .comment_user_image_wrapper{
+    position: relative;
+    overflow: hidden;
+  } */
   .comment_content_box{
     /* background-color: aqua; */
     width: 100%;
@@ -80,7 +84,7 @@ const $comment = styled.div`
   margin-bottom: 25px;
   padding-left: 30px;
   padding-right: 30px;
-
+    color: black;
   }
   .img-signal{
     position: absolute;
