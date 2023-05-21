@@ -2,14 +2,15 @@
  * @author    : gogleset
  * @description : 내 정보를 볼 수 있는 페이지 컴포넌트 입니다.
  **/
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
+
+import MyPageCollection from '../components/MyPageCollection/MyPageCollection';
+// import { boolCheckCookie } from "../utils/cookie";
+import MyPageProfile from '../components/myPageProfile/myPageProfile';
 // import { useRouter } from "next/navigation";
 // import { useAccount } from "wagmi";
-import $MyPage from "./style";
-// import { boolCheckCookie } from "../utils/cookie";
-import MyPageProfile from "../components/myPageProfile/myPageProfile";
-import MyPageCollection from "../components/MyPageCollection/MyPageCollection";
+import $MyPage from './style';
 
 const page = () => {
   // const account = useAccount();

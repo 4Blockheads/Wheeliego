@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import $MyPageCollection from "./style";
+'use client';
+import React from 'react';
+
+import $MyPageCollection from './style';
 
 const MyPageCollection = () => {
   return (
@@ -9,7 +9,7 @@ const MyPageCollection = () => {
       <div className="title">Friends</div>
       <div className="friends-box">
         <div className="wrapper">
-          <div className="image-box"></div>
+          <div className="image-box" />
           {/* <div className="image-box"></div>
           <div className="image-box"></div>
           <div className="image-box"></div>
@@ -32,7 +32,7 @@ const MyPageCollection = () => {
       <div className="signal-box">
         <div className="title">signal</div>
         <div className="wrapper">
-          <div className="signal-box"></div>
+          <div className="signal-box" />
         </div>
       </div>
     </$MyPageCollection>
