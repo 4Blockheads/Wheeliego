@@ -20,6 +20,9 @@ const Comment = (props) => {
             <div className="wrapper">
               <div className="comment_user_box">
                 <div className="comment_user_image" />
+                {/* <div className="comment_user_image_wrapper">
+                  <Image src={"/alien1.png"} width={25} height={25} />
+                </div> */}
                 <div>
                   <span>asd!23</span>
                 </div>
@@ -90,11 +93,11 @@ const Comment = (props) => {
                 style={{ position: 'absolute', top: '19px', left: '140px' }}
               />
               <Image
-                src="/heart.png"
+                src="/comment_button.png"
                 alt={'send-image'}
-                width={15}
-                height={15}
-                style={{ position: 'absolute', top: '20px', right: '18px' }}
+                width={20}
+                height={20}
+                style={{ position: 'absolute', top: '17.5px', right: '14px' }}
               />
             </div>
           </div>

@@ -39,7 +39,7 @@ const PostListBox = (props) => {
     <$PostListBox key={props.index} type={props.type} index={props.index}>
       <div className="wrapper">
         <div className="image-box">
-          <Image src={imageURl} fill />
+          <Image src={imageURl} fill style={{ borderRadius: '20px' }} />
         </div>
         <div className="contents-box">
           <h1>{`${props.type == 'Recent' ? 'Recent' : 'Hot'} Signal`}</h1>

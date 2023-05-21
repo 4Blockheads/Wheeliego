@@ -47,7 +47,13 @@ const Header = () => {
         >
           Post
         </span>
-        <span>My page</span>
+        <span
+          onClick={() => {
+            return router.push('/myPage');
+          }}
+        >
+          My page
+        </span>
         <span>Point</span>
       </$Nav>
       <$ButtonsDiv>
