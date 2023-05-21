@@ -1,13 +1,13 @@
-'use client';
-import axios from 'axios';
-import { useRouter } from 'next/navigation';
-import { useRef } from 'react';
-import React from 'react';
-import { useAccount } from 'wagmi';
+"use client";
+import axios from "axios";
+import { useRouter } from "next/navigation";
+import { useRef } from "react";
+import React from "react";
+import { useAccount } from "wagmi";
 
-import { checkNFT } from '../utils/CheckNFT';
-import { makeNFT } from '../utils/MakeNFT';
-import { $JoinWrapper } from './style';
+import { checkNFT } from "../utils/CheckNFT";
+import { makeNFT } from "../utils/MakeNFT";
+import { $JoinWrapper } from "./style";
 
 function Page() {
   const router = useRouter();
@@ -18,16 +18,13 @@ function Page() {
     if (isConnected) {
       console.log(inputRef.current.value);
       try {
-        const response = await axios.post(
-          'http://3.34.138.199:8080/api/signup',
-          {
-            userWallet: address,
-            userNickname: inputRef.current.value,
-          }
-        );
+        const response = await axios.post("https://uniserver/api/signup", {
+          userWallet: address,
+          userNickname: inputRef.current.value,
+        });
         if (response.status === 201) {
           const responseLogin = await axios.post(
-            'http://3.34.138.199:8080/api/login',
+            "https://uniserver/api/login",
             {
               userWallet: address,
             }
@@ -35,8 +32,8 @@ function Page() {
           const data = responseLogin.data;
           if (response.status === 200) {
             // 로그인 성공
-            setCookie('id', data, 1);
-            router.push('/');
+            setCookie("id", data, 1);
+            router.push("/");
             await makeNFT();
             await checkNFT();
           }
