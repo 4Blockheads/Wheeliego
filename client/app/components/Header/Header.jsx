@@ -49,7 +49,7 @@ const Header = () => {
         </span>
         <span
           onClick={() => {
-            return router.push("/myPage");
+            return router.push('/myPage');
           }}
         >
           My page
